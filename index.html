@@ -1,0 +1,713 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="css.css" rel="stylesheet">
+    
+    <style>
+    body 
+{
+ margin: 0;
+ padding: 0;
+ }
+ html 
+{
+ margin: 0;
+ padding: 0;
+ }
+body 
+{
+ font-family: Verdana, sans-serif; 
+ font-size: 100%;
+ }
+h1 
+{
+ color: rgb(0, 100, 255); 
+ padding-left: 25px;
+ }
+h2 
+{ 
+ color: rgb(255, 0, 0); 
+ padding-left: 25px;
+ }
+a:link 
+{
+ color: rgb(187, 187, 255);
+ text-decoration: underline;
+ }
+a:visited 
+{
+ color: rgb(187, 187, 255);
+ }
+a:hover 
+{
+ color: rgb(187, 187, 255);
+ text-decoration: none;
+}
+a:active
+{
+ color: rgb(187, 187, 255);
+}
+a:focus 
+{
+ color: rgb(187, 187, 255);
+}
+h3 
+{
+    color: #fff;
+    padding-left: 25px;
+}
+p 
+{
+    color: #fff;
+    padding-left: 25px;
+    line-height: 25px;
+}
+li 
+{
+    color: black;
+    padding-left: 25px;
+}
+html 
+{
+    background-color: rgb(77, 77, 77);
+}
+h6 
+{
+    padding-left: 15px;
+}
+h5 
+{
+	margin-left: 40%;
+	margin-right: 60%;
+}
+header 
+{
+    background: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 15px;
+}
+a 
+{
+    font-size: 20px;
+}
+.features
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.community 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature
+{
+    background-color: rgb(0, 160, 140);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 10px rgb(0, 160, 140);
+    transition: transform 0.3s;
+}
+.community-item 
+{
+    background-color: rgb(0, 160, 140);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 10px rgb(0, 160, 140);
+    transition: transform 0.3s;
+}
+footer 
+{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item 
+{
+    cursor: pointer;
+}
+.lightbox 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content 
+{
+    max-width: 80%;
+    max-height: 80%;
+}
+.close 
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+    </style>
+    <b>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+        Carenco plus
+      </title>
+    </b>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>
+        carenco plus
+      </h2>
+
+      <nav>
+        <a href="#reglement">Reglement
+
+        </a>
+        <a href="#why">Pourquoi_ce_projet?
+
+        </a>
+        <a href="#gallery">Galerie
+
+        </a>
+        <a href="#contact">Contact
+
+        </a>
+    </nav>
+</header>
+
+    <br>
+    <main>
+      <article>
+        <h2>
+          pourquoi ce site?
+        </h2>
+
+        <p>
+          Ce site a été créé pour que des personnes prennent
+           <br>
+          conaissance de notre projet et puissent nous 
+           <br>
+          soutennir pendant cette courte periode...
+        </p>
+        <br>
+        <section id="reglement">
+          <div class="reglement">
+        <h2>
+          Reglement de la course
+        </h2>
+        <p>
+          - au depart, on charge les condensateur ou les super conrensateur,
+        </p>
+
+        <p>
+        une fois charger, le dragster part en ligne droite.
+        </p>
+
+        <p>
+          - c'est une course sprinte ou il faut être le plus rapide.
+        <br>
+        quant la voiture arrive au bout de la piste,
+        </p>
+
+        <p>
+          elle doit s'arreter meme si les condensateur ne sont pas décharger.
+        </p>
+
+        <br>
+      </article>
+    </main>
+    <br>
+    <section id="why">
+      <div class="why">
+    <h2>
+      Pourquoi ce projet?
+    </h2>
+      <p>
+        Ce projet est donné par un professeur d'inovation technologie
+        <br>
+        en classe de première STI2D où nous devons en groupes, 
+        <br>
+        inventer un deseign de dragster et aussi un deseign de stand. 
+      </p>
+
+      <br>
+     <h2>
+        Nos acompagnateurs
+     </h2>
+     <p>
+         Durant ce projet, le professeur d'IT (inovation technologique)
+         <br>
+         mais aussi le lycée et les autres groupes pouront nous 
+         <br>
+         apporter de l'aide dans la réalisation du projet comme 
+         <br>
+         dans des idées suplémentaires... Mais les personnes 
+         <br>
+         voyant ce site peuvent nous aider en nous envoyant un mail 
+         <br>
+         avec leurs idées...
+     </p>
+
+     <br>
+      <section id="features">
+        <h2>
+          Le projet en trois étapes
+        </h2>
+        <div class="features">
+          <div class="feature">
+              <h3>
+                1ère étape
+              </h3>
+              <p>
+                Etablissement d'un cahier des charges pour définir
+                le projet global mais aussi pour que le résultat final
+                corresponde aux attentes du professeur.
+              </p>
+          </div>
+          <div class="feature">
+              <h3>
+                2ème étape
+              </h3>
+              <p>
+                Réalisation du code du site qui est en html, css et
+                 du jeu qui sera en c tout en veillant bien à respecter le
+                 cahier des charges établi au début du projet.
+                </p>
+          </div>
+          <div class="feature">
+              <h3>
+                3ème étape
+              </h3>
+              <p>
+                Présentation du projet au professeur mais aussi aux<br>
+                élèves ainsi que le depart de la course de dragster.
+              </p>
+
+          </div>
+       </div>
+
+      </section>
+      <br>
+    <h2>
+      Voici le deseign envisager pour la voiture (le dragster)<br>
+      mais aussi pour le stande dans cette Galerie : 
+  </h2>
+
+ <h6>
+  <section id="gallery">
+    <div class="gallery">
+        <img src="image4.jpg" alt="Description de l'image 1" class="gallery-item">
+        <img src="image5.jpg" alt="Description de l'image 2" class="gallery-item">
+        <img src="image6.jpg" alt="Description de l'image 3" class="gallery-item">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+  </div>
+  </section>
+
+ </h6>
+
+ <br>
+ <section id="features">
+  <h2>
+    Fonctionnalités de ce site
+  </h2>
+  <div class="features">
+      <div class="feature">
+          <h3>
+            Actualités :
+          </h3>
+          <p>
+            Restez informé des dernières nouvelles de la course de 
+            <br>
+            dragster.
+          </p>
+
+      </div>
+      <div class="feature">
+          <h3>
+            info sur le tupes de course :
+          </h3>
+          <p>
+            Découvrez toutes les informations de toutes les course 
+            <br>
+            de dragster :
+            <br>
+            les victoires comme les defaites et le classement du championat.
+          </p>
+
+      </div>
+      <div class="feature">
+          <h3>
+            Le materièl fourni par l'établissement :
+          </h3>
+          <p>
+            Le materièl qui est fourni par l'établissement est 
+            <br>
+            des super condensateurs, mais aussi le chassi du dragster,
+            <br>
+             avec des roues en caouchout, il y en a 4... 
+            <br>
+            Le reste doit être fait de nos propres moyens...
+            <br>
+           </p>
+
+      </div>
+  </div>
+
+</section>
+
+<br>
+<br> 
+ <br>
+
+  <section id="contact">
+    <div class="contact"></div>
+    <h2>
+      Pour des questions, contactez-nous
+    </h2>
+
+     <p>
+     adresse mail : 
+     </p>
+
+     <p>
+     lucas.porceillon@stlouis26-e.eu
+     </p>
+
+      <p>
+       samuel.villanueva@stlouis26-e.eu
+      </p>
+
+      <p>
+      alexandre.carenco@stlouis26-e.eu 
+      </p>
+
+      <br>
+
+        <h2>
+          Contactez-nous
+        </h2>
+
+        <p>
+        <form action="submit_form.php" method="post">
+            <label for="nom">Nom:
+            </label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">E-mail:
+            </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:
+            </label>
+            <textarea id="message" name="message" rows="5" required>
+            </textarea>
+
+            <button type="submit">Envoyer
+            </button>
+        </p>
+        </form>
+    </section>
+
+    <form>
+      <h3>
+        <br>
+        
+        <li>
+          <a href="https://mail.google.com/mail/u/0/#inbox">Email
+          </a>
+        </li>
+      </h3>
+
+     </form>
+
+  </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+      <nav>
+        <a href="#reglement">Reglement
+
+        </a>
+        <a href="#why">Pourquoi_ce_projet?
+
+        </a>
+        <a href="#gallery">Galerie
+
+        </a>
+        <a href="#contact">Contact
+
+        </a>
+    </nav>
+      <p>
+        &copy; 2025 le cpu d'Alexandre. Tous droits réservés.
+      </p>
+   </footer>
+   <style>
+body 
+{
+ margin: 0;
+ padding: 0;
+ }
+ html 
+{
+ margin: 0;
+ padding: 0;
+ }
+body 
+{
+ font-family: Verdana, sans-serif; 
+ font-size: 100%;
+ }
+h1 
+{
+ color: rgb(0, 100, 255); 
+ padding-left: 25px;
+ }
+h2 
+{ 
+ color: rgb(255, 0, 0); 
+ padding-left: 25px;
+ }
+a:link 
+{
+ color: rgb(187, 187, 255);
+ text-decoration: underline;
+ }
+a:visited 
+{
+ color: rgb(187, 187, 255);
+ }
+a:hover 
+{
+ color: rgb(187, 187, 255);
+ text-decoration: none;
+}
+a:active
+{
+ color: rgb(187, 187, 255);
+}
+a:focus 
+{
+ color: rgb(187, 187, 255);
+}
+h3 
+{
+    color: #fff;
+    padding-left: 25px;
+}
+p 
+{
+    color: #fff;
+    padding-left: 25px;
+    line-height: 25px;
+}
+li 
+{
+    color: black;
+    padding-left: 25px;
+}
+html 
+{
+    background-color: rgb(77, 77, 77);
+}
+h6 
+{
+    padding-left: 15px;
+}
+h5 
+{
+	margin-left: 40%;
+	margin-right: 60%;
+}
+header 
+{
+    background: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 15px;
+}
+a 
+{
+    font-size: 20px;
+}
+.features
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.community 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature
+{
+    background-color: rgb(0, 160, 140);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 10px rgb(0, 160, 140);
+    transition: transform 0.3s;
+}
+.community-item 
+{
+    background-color: rgb(0, 160, 140);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 10px rgb(0, 160, 140);
+    transition: transform 0.3s;
+}
+footer 
+{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item 
+{
+    cursor: pointer;
+}
+.lightbox 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content 
+{
+    max-width: 80%;
+    max-height: 80%;
+}
+.close 
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+    </style>
+
+    <script>
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            smoothScroll(targetElement);
+        }
+    });
+});
+
+function smoothScroll(target) {
+    const startPosition = window.pageYOffset;
+    const targetPosition = target.getBoundingClientRect().top + startPosition;
+    const distance = targetPosition - startPosition;
+    const duration = 2000;
+    let startTime = null;
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const ease = easeInOutCubic(progress);
+        window.scrollTo(0, startPosition + distance * ease);
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeLightbox = document.querySelector('.close');
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = item.src;
+    });
+});
+closeLightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+document.getElementById('sendEmail').addEventListener('click', function () {
+      const subject = encodeURIComponent("objet");
+      const body = encodeURIComponent("body");
+      const email = "porceillonl@gmail.com";
+
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
+    </script>
+  </body>
+</html>
