@@ -43,7 +43,7 @@ h3
 }
 p 
 {
-    color: white;
+    color: #fff;
     padding-left: 25px;
     line-height: 25px;
 }
@@ -137,8 +137,4 @@ footer
     color: white;
     font-size: 50px;
     cursor: pointer;
-}
-label 
-{
-	color: white;
 }
