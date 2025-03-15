@@ -5,384 +5,432 @@
     <link href="css.css" rel="stylesheet">
     
     <style>
-      body 
-  {
-   margin: 0;
-   padding: 0;
-   }
-   h2 
-  { 
-   color: rgb(255, 0, 0); 
-   padding-left: 25px;
-   }
-   p 
-  {
-      color: #fff;
-      padding-left: 25px;
-      line-height: 25px;
-  }
-   .gallery-item {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .gallery-item:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-  }
-  
-  .lightbox.show {
-      display: flex;
-      opacity: 1;
-  }
-   .feature:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-  }
-   .community-item:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-  }
-  body {
-      background-image: url('background.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  a {
-      transition: color 0.3s ease;
-  }
-  
-  a:hover {
-      color: #ffcc00;
-  }
-  button {
-      background-color: #3498db;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  button:hover {
-      background-color: #2980b9;
-      transform: scale(1.1);
-  }
-  h1 {
-      position: relative;
-      display: inline-block;
-      animation: textPop 1s ease;
-  }
-  h2 {
-      position: relative;
-      display: inline-block;
-      animation: textPop 1s ease;
-  }
-  
-  @keyframes textPop {
-      0% {
-          transform: scale(0.8);
-          opacity: 0;
-      }
-      100% {
-          transform: scale(1);
-          opacity: 1;
-      }
-  }
-  body {
-      background: linear-gradient(270deg, #1a1a1a, #2c3e50);
-      background-size: 400% 400%;
-      animation: gradientBG 10s ease infinite;
-  }
-  
-  @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-  }
-  h1 {
-      position: relative;
-      overflow: hidden;
-  }
-  h2 {
-      position: relative;
-      overflow: hidden;
-  }
-  h3 {
-      position: relative;
-      overflow: hidden;
-  }
-  h1::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 0.5s ease;
-  }
-  h2::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 0.5s ease;
-  }
-  h3::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 0.5s ease;
-  }
-  h1:hover::after {
-      transform: translate(-50%, -50%) scale(1);
-  }
-  h2:hover::after {
-      transform: translate(-50%, -50%) scale(1);
-  }
-  h3:hover::after {
-      transform: translate(-50%, -50%) scale(1);
-  }
-  @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-  }
-  
-  .loader {
-      border: 16px solid #f3f3f3;
-      border-top: 16px solid #3498db;
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      animation: spin 2s linear infinite;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-  }
-  h1 {
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-  }
-  h2 {
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-  }
-  h3 {
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-  }
-  p {
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-  }
-  @keyframes fadeIn {
-      from {
-          opacity: 0;
-          transform: translateY(20px);
-      }
-      to {
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
-   html 
-  {
-   margin: 0;
-   padding: 0;
-   }
-  body 
-  {
-   font-family: Verdana, sans-serif; 
-   font-size: 100%;
-   }
-  h1 
-  {
-   color: rgb(0, 100, 255); 
-   padding-left: 25px;
-   }
-  
-  a:link 
-  {
-   color: rgb(187, 187, 255);
-   text-decoration: underline;
-   }
-  a:visited 
-  {
-   color: rgb(187, 187, 255);
-   }
-  a:hover 
-  {
-   color: rgb(187, 187, 255);
-   text-decoration: none;
-  }
-  a:active
-  {
-   color: rgb(187, 187, 255);
-  }
-  a:focus 
-  {
-   color: rgb(187, 187, 255);
-  }
-  h3 
-  {
-      color: #fff;
-      padding-left: 25px;
-  }
-  
-  li 
-  {
-      color: black;
-      padding-left: 25px;
-  }
-  html 
-  {
-      background-color: rgb(77, 77, 77);
-  }
-  h6 
-  {
-      padding-left: 15px;
-  }
-  h5 
-  {
-    margin-left: 40%;
-    margin-right: 60%;
-  }
-  header 
-  {
-      background: #000000;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      word-spacing: 15px;
-  }
-  a 
-  {
-      font-size: 20px;
-  }
-  .features
-  {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-  }
-  .community 
-  {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-  }
-  .feature
-  {
-      background-color: rgb(0, 160, 140);
-      margin: 10px;
-      padding: 20px;
-      border-radius: 8px;
-      flex: 1;
-      max-width: 30%;
-      box-shadow: 0 4px 10px rgb(0, 160, 140);
-      transition: transform 0.3s;
-  }
-  .community-item 
-  {
-      background-color: rgb(0, 160, 140);
-      margin: 10px;
-      padding: 20px;
-      border-radius: 8px;
-      flex: 1;
-      max-width: 30%;
-      box-shadow: 0 4px 10px rgb(0, 160, 140);
-      transition: transform 0.3s;
-  }
-  @media (max-width: 768px) 
-  {
-   header {
-           word-spacing: 5px;
-  }
-  .feature{
-    max-width: 100%;
-    margin: 10px 0;
-  } 
-  .community-item {
-                  max-width: 100%;
-                  margin: 10px 0;
-              }
-  
-              .features{
-                flex-direction: column;
-              } 
-              .community {
-                  flex-direction: column;
-              }
-  
-              h1 {
-                  padding-left: 10px;
-              }
-              h2 {
-                  padding-left: 10px;
-              }
-              h3 {
-                  padding-left: 10px;
-              }
-              p {
-                  padding-left: 10px;
-              }
-  
-              .gallery {
-                  flex-direction: column;
-              }
-  
-              .gallery-item {
-                  width: 100%;
-  }
-  }
-  .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+        textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: none;
+                    border-radius: 5px;
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #fff;
+                }
+        
+            body 
+        {
+         margin: 0;
+         padding: 0;
+         }
+         a {
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 15px;
+                    font-size: 1.1rem;
+                    transition: color 0.3s ease;
+                }
+         label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                    color: white;
+                }
+         h2 
+        { 
+         color: rgb(255, 0, 0); 
+         padding-left: 25px;
+         padding-top: 30px;
+         font-size: 25px;
+         }
+         p 
+        {
+            color: #fff;
+            padding-left: 25px;
+            line-height: 25px;
+            font-size: 15px;
+        }
+         .gallery-item 
+         {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+        
+        .lightbox.show {
+            display: flex;
+            opacity: 1;
+        }
+         .feature:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+         .community-item:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        body {
+            background-image: url('background.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        a:hover {
+            color: #ffcc00;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #3498db;
+            transform: scale(1.1);
+        }
+        h1 {
+            position: relative;
+            display: inline-block;
+            animation: textPop 1s ease;
+        }
+        h2 {
+            position: relative;
+            display: inline-block;
+            animation: textPop 1s ease;
+        }
+        
+        @keyframes textPop {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        body {
+            background: linear-gradient(270deg, #1a1a1a, #2c3e50);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            position: relative;
+            overflow: hidden;
+        }
+        h2 {
+            position: relative;
+            overflow: hidden;
+        }
+        h3 {
+            position: relative;
+            overflow: hidden;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+        }
+        h3::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+        }
+        h1:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        h2:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        h3:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        h1 {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+        h2 {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+        h3 {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+        p {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         html 
+        {
+         margin: 0;
+         padding: 0;
+         }
+        body 
+        {
+         font-family: Verdana, sans-serif; 
+         font-size: 100%;
+         }
+        h1 
+        {
+         color: rgb(0, 100, 255); 
+         padding-left: 25px;
+         }
+        
+        a:link 
+        {
+         color: rgb(187, 187, 255);
+         text-decoration: underline;
+         }
+        a:visited 
+        {
+         color: rgb(187, 187, 255);
+         }
+        a:hover 
+        {
+         color: rgb(187, 187, 255);
+         text-decoration: none;
+        }
+        a:active
+        {
+         color: rgb(187, 187, 255);
+        }
+        a:focus 
+        {
+         color: rgb(187, 187, 255);
+        }
+        h3 
+        {
+            color: #fff;
+            padding-left: 25px;
+        }
+        
+        li 
+        {
+            color: black;
+            padding-left: 25px;
+        }
+        html 
+        {
+            background-color: rgb(77, 77, 77);
+        }
+        h6 
+        {
+            padding-left: 15px;
+        }
+        h5 
+        {
+            margin-left: 40%;
+            margin-right: 60%;
+        }
+        header {
+                    background: rgba(0, 0, 0, 0.8);
+                    padding: 20px;
+                    text-align: center;
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    z-index: 1000;
+                    backdrop-filter: blur(10px);
+                    color: #fff;
+        
+        }
+        
+        .features
+        {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .community 
+        {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature
+        {
+            background-color: rgb(0, 160, 140);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            max-width: 30%;
+            box-shadow: 0 4px 10px rgb(0, 160, 140);
+            transition: transform 0.3s;
+        }
+        .community-item 
+        {
+            background-color: rgb(0, 160, 140);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            max-width: 30%;
+            box-shadow: 0 4px 10px rgb(0, 160, 140);
+            transition: transform 0.3s;
+        }
+        @media (max-width: 768px) 
+        {
+         header {
+                 word-spacing: 5px;
+        }
+        .feature{
+          max-width: 100%;
+          margin: 10px 0;
+        } 
+        .community-item {
+                        max-width: 100%;
+                        margin: 10px 0;
+                    }
+        
+                    .features{
+                      flex-direction: column;
+                    } 
+                    .community {
+                        flex-direction: column;
+                    }
+        
+                    h1 {
+                        padding-left: 10px;
+                    }
+                    h2 {
+                        padding-left: 10px;
+                    }
+                    h3 {
+                        padding-left: 10px;
+                    }
+                    p {
+                        padding-left: 10px;
+                    }
+        
+                    .gallery {
+                        flex-direction: column;
+                    }
+        
+                    .gallery-item {
+                        width: 100%;
+        }
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .lightbox.show {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .lightbox-content {
+            max-width: 150%;
+            max-height: 150%;
+            z-index: 1001;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 50px;
+            cursor: pointer;
+            z-index: 1002;
+        }
+        input {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: none;
+                    border-radius: 5px;
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #fff;
+                }
+            form {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+            main {
+                    padding-top: 100px;
+                }
+        
+            esection {
+                    padding: 60px 20px;
+                    text-align: center;
+                }
+            </style>
 
-.lightbox.show {
-    display: flex;
-    opacity: 1;
-}
-
-.lightbox-content {
-    max-width: 150%;
-    max-height: 150%;
-    z-index: 1001;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 50px;
-    cursor: pointer;
-    z-index: 1002;
-}
-      </style>
     <b>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>
@@ -415,254 +463,422 @@
         <a href="#contact">Contact
 
         </a>
+
     </nav>
+
 </header>
 
-    <br>
     <main>
+
       <article>
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <br>
+
         <h2>
+
           pourquoi ce site?
+
         </h2>
 
         <p>
+
           Ce site a été créé pour que des personnes prennent
+
            <br>
+
           conaissance de notre projet et puissent nous 
+
            <br>
+
           soutennir pendant cette courte periode...
+
         </p>
-        <br>
+
         <section id="reglement">
+
           <div class="reglement">
+
         <h2>
+
           Reglement de la course
+
         </h2>
+
         <p>
+
           - au depart, on charge les condensateur ou les super conrensateur,
+
         </p>
 
         <p>
+
         une fois charger, le dragster part en ligne droite.
+
         </p>
 
         <p>
+
           - c'est une course sprinte ou il faut être le plus rapide.
+
         <br>
+
         quant la voiture arrive au bout de la piste,
+
         </p>
 
         <p>
+
           elle doit s'arreter meme si les condensateur ne sont pas décharger.
+
         </p>
 
         <br>
+
       </article>
+
     </main>
-    <br>
+
     <section id="why">
+
       <div class="why">
+
     <h2>
+
       Pourquoi ce projet?
+
     </h2>
+
       <p>
+
         Ce projet est donné par un professeur d'inovation technologie
+
         <br>
+
         en classe de première STI2D où nous devons en groupes, 
+
         <br>
+
         inventer un deseign de dragster et aussi un deseign de stand. 
+
       </p>
 
-      <br>
      <h2>
+
         Nos acompagnateurs
+
      </h2>
+
      <p>
+
          Durant ce projet, le professeur d'IT (inovation technologique)
+
          <br>
+
          mais aussi le lycée et les autres groupes pouront nous 
+
          <br>
+
          apporter de l'aide dans la réalisation du projet comme 
+
          <br>
+
          dans des idées suplémentaires... Mais les personnes 
+
          <br>
+
          voyant ce site peuvent nous aider en nous envoyant un mail 
+
          <br>
+
          avec leurs idées...
+
      </p>
 
-     <br>
       <section id="features">
+
         <h2>
+
           Le projet en trois étapes
+
         </h2>
+
         <div class="features">
           <div class="feature">
               <h3>
+
                 1ère étape
+
               </h3>
+
               <p>
+
                 Etablissement d'un cahier des charges pour définir
                 le projet global mais aussi pour que le résultat final
                 corresponde aux attentes du professeur.
+
               </p>
+
           </div>
+
           <div class="feature">
+
               <h3>
+
                 2ème étape
+
               </h3>
+
               <p>
+
                 Réalisation du code du site qui est en html, css et
                  du jeu qui sera en c tout en veillant bien à respecter le
                  cahier des charges établi au début du projet.
+
                 </p>
+
           </div>
+
           <div class="feature">
+
               <h3>
+
                 3ème étape
+
               </h3>
+
               <p>
-                Présentation du projet au professeur mais aussi aux<br>
+
+                Présentation du projet au professeur mais aussi aux
+
+                <br>
+
                 élèves ainsi que le depart de la course de dragster.
+
               </p>
 
           </div>
+
        </div>
 
       </section>
+
       <br>
+
     <h2>
-      Voici le deseign envisager pour la voiture (le dragster)<br>
-      mais aussi pour le stande dans cette Galerie : 
+
+      Voici le deseign envisager pour la voiture (le dragster)
+      
+      <br>
+
+      mais aussi pour le stande dans cette Galerie :
+
   </h2>
 
  <h6>
+
     <section id="gallery">
+
         <div class="gallery">
+
             <img src="image4.jpg" alt="Description de l'image 1" class="gallery-item">
+
             <img src="image5.jpg" alt="Description de l'image 2" class="gallery-item">
+
             <img src="image6.jpg" alt="Description de l'image 3" class="gallery-item">
+
         </div>
     
         <div class="lightbox" id="lightbox">
+
             <span class="close">&times;</span>
+
             <img class="lightbox-content" id="lightbox-img">
+
         </div>
+
     </section>
 
  </h6>
 
- <br>
  <section id="features">
+
   <h2>
+
     Fonctionnalités de ce site
+
   </h2>
+
   <div class="features">
+
       <div class="feature">
+
           <h3>
+
             Actualités :
+
           </h3>
+
           <p>
+
             Restez informé des dernières nouvelles de la course de 
+
             <br>
+
             dragster.
+
           </p>
 
       </div>
+
       <div class="feature">
+
           <h3>
-            info sur le tupes de course :
+
+            info sur le types de course :
+
           </h3>
+
           <p>
+
             Découvrez toutes les informations de toutes les course 
+
             <br>
+
             de dragster :
+
             <br>
+
             les victoires comme les defaites et le classement du championat.
+
           </p>
 
       </div>
+
       <div class="feature">
+
           <h3>
+
             Le materièl fourni par l'établissement :
+
           </h3>
+
           <p>
+
             Le materièl qui est fourni par l'établissement est 
+
             <br>
+
             des super condensateurs, mais aussi le chassi du dragster,
+
             <br>
+
              avec des roues en caouchout, il y en a 4... 
+
             <br>
+
             Le reste doit être fait de nos propres moyens...
+
             <br>
+
            </p>
 
       </div>
+
   </div>
 
 </section>
 
 <br>
-<br> 
+
  <br>
 
   <section id="contact">
-    <div class="contact"></div>
+
+    <div class="contact">
+
+    </div>
+
     <h2>
+
       Pour des questions, contactez-nous
+
     </h2>
+
 
      <p>
      adresse mail : 
+
      </p>
 
      <p>
+
      lucas.porceillon@stlouis26-e.eu
+
      </p>
 
       <p>
+
        samuel.villanueva@stlouis26-e.eu
+
       </p>
 
-      <p>
-      alexandre.carenco@stlouis26-e.eu 
-      </p>
-
-      <br>
-
-        <h2>
-          Contactez-nous
-        </h2>
 
         <p>
+
+        <esection>
+
         <form action="submit_form.php" method="post">
+
             <label for="nom">Nom:
+
             </label>
+
             <input type="text" id="nom" name="nom" required>
 
             <label for="email">E-mail:
+
             </label>
+
             <input type="email" id="email" name="email" required>
 
             <label for="message">Message:
+
             </label>
+
             <textarea id="message" name="message" rows="5" required>
+
             </textarea>
 
             <button type="submit">Envoyer
+
             </button>
-        </p>
+
+        </esection>
+
+    </p>
+
         </form>
+
     </section>
 
     <form>
+
       <h4>
-        <br>
         
         <li>
+
           <a href="https://mail.google.com/mail/u/0/#inbox">Email
+
           </a>
+
         </li>
+
       </h4>
 
      </form>
@@ -670,30 +886,10 @@
   </section>
 
     <br>
-    <br>
-    <br>
+
     <br>
 
     <footer>
-      <nav>
-        
-        <a href="#reglement">Reglement
-
-        </a>
-
-        <a href="#why">Pourquoi_ce_projet?
-
-        </a>
-
-        <a href="#gallery">Galerie
-
-        </a>
-
-        <a href="#contact">Contact
-
-        </a>
-
-    </nav>
 
       <p>
 
@@ -704,23 +900,51 @@
    </footer>
 
    <style>
+
+textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
     body 
 {
  margin: 0;
  padding: 0;
  }
+ a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+ label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: white;
+        }
  h2 
 { 
  color: rgb(255, 0, 0); 
  padding-left: 25px;
+ padding-top: 30px;
+ font-size: 25px;
  }
  p 
 {
     color: #fff;
     padding-left: 25px;
     line-height: 25px;
+    font-size: 15px;
 }
- .gallery-item {
+ .gallery-item 
+ {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -748,9 +972,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-a {
-    transition: color 0.3s ease;
-}
 
 a:hover {
     color: #ffcc00;
@@ -765,7 +986,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #3498db;
     transform: scale(1.1);
 }
 h1 {
@@ -960,18 +1181,19 @@ h5
 	margin-left: 40%;
 	margin-right: 60%;
 }
-header 
-{
-    background: #000000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    word-spacing: 15px;
+header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            color: #fff;
+
 }
-a 
-{
-    font-size: 20px;
-}
+
 .features
 {
     display: flex;
@@ -1081,6 +1303,29 @@ a
     cursor: pointer;
     z-index: 1002;
 }
+input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+    form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+    main {
+            padding-top: 100px;
+        }
+
+    esection {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
     </style>
 
     <script>
@@ -1148,13 +1393,6 @@ lightbox.addEventListener('click', (e) => {
         document.body.style.overflow = 'auto';
     }
 });
-document.getElementById('sendEmail').addEventListener('click', function () {
-      const subject = encodeURIComponent("objet");
-      const body = encodeURIComponent("body");
-      const email = "porceillonl@gmail.com";
-
-      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-    });
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -1168,27 +1406,20 @@ document.getElementById('sendEmail').addEventListener('click', function () {
         }
     });
 });
-window.addEventListener('load', function() {
-    const loader = document.createElement('div');
-    loader.className = 'loader';
-    document.body.appendChild(loader);
-    setTimeout(() => {
-        loader.style.display = 'none';
-    }, 2000); 
-});
 document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('nom').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+            e.preventDefault();
+            const name = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-    if (name && email && message) {
-        alert('Merci pour votre message!');
-        this.reset();
-    } else {
-        alert('Veuillez remplir tous les champs.');
-    }
-});
+            if (name && email && message) {
+                alert('Merci pour votre message!');
+                this.reset();
+            } else {
+                alert('Veuillez remplir tous les champs.');
+            }
+        });
+
     </script>
   </body>
 </html>
