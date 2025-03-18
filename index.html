@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
+    
   <head>
+
     <meta charset="utf-8" />
-    <link href="css.css" rel="stylesheet">
     
     <style>
 
@@ -11,6 +12,16 @@
             color: white;
             font-size: 20px;
         }
+
+        footer 
+{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
         textarea 
         {
@@ -33,12 +44,12 @@
          {
                     color: #fff;
                     text-decoration: none;
-                    margin: 0 15px;
+                    margin: 0px;
                     font-size: 20px;
                     transition: color 0.3s ease;
                 }
 
-                c
+                .c
                  {
                     color: #fff;
                     text-decoration: none;
@@ -172,7 +183,7 @@
 
         body 
         {
-            background: linear-gradient(270deg, #1a1a1a, #2c3e50);
+            background: linear-gradient(270deg, #1a1a1a, #506a85);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
         }
@@ -485,10 +496,6 @@
 
         @media (max-width: 768px) 
         {
-         header 
-         {
-                 word-spacing: 5px;
-        }
 
         .feature
         {
@@ -543,6 +550,33 @@
 
         }
 
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 2.5s ease;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
         .lightbox 
         {
             display: none;
@@ -565,9 +599,12 @@
         
         .lightbox-content 
         {
-            max-width: 150%;
-            max-height: 150%;
             z-index: 1001;
+        }
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
         }
         
         .close 
@@ -610,6 +647,15 @@
                     text-align: center;
                 }
 
+                nav 
+                {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
             </style>
 
     <b>
@@ -626,9 +672,13 @@
 
 
     <link
+
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+
       rel="stylesheet"
+
       type="text/css" />
+
   </head>
 
   <body>
@@ -808,7 +858,9 @@
               <p>
 
                 Etablissement d'un cahier des charges pour définir
+
                 le projet global mais aussi pour que le résultat final
+
                 corresponde aux attentes du professeur.
 
               </p>
@@ -826,7 +878,9 @@
               <p>
 
                 Réalisation du code du site qui est en html, css et
+
                  du jeu qui sera en c tout en veillant bien à respecter le
+                 
                  cahier des charges établi au début du projet.
 
                 </p>
@@ -1088,6 +1142,16 @@
         font-size: 20px;
     }
 
+    footer 
+{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
     textarea 
     {
                 width: 100%;
@@ -1109,7 +1173,7 @@
      {
                 color: #fff;
                 text-decoration: none;
-                margin: 0 15px;
+                margin: 0px;
                 font-size: 20px;
                 transition: color 0.3s ease;
             }
@@ -1561,10 +1625,6 @@
 
     @media (max-width: 768px) 
     {
-     header 
-     {
-             word-spacing: 5px;
-    }
 
     .feature
     {
@@ -1785,12 +1845,12 @@ document.querySelector('form').addEventListener('submit', function(e) {
             const message = document.getElementById('message').value;
 
             if (name && email && message) {
-                alert('Merci pour votre message!');
+                alert('Merci pour votre message !');
                 this.reset();
 
             } else 
             {
-                alert('Veuillez remplir tous les champs.');
+                alert('Veuillez remplir tous les champs !');
             }
 
         });
