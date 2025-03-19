@@ -1131,6 +1131,10 @@
         </form>
 
     </section>
+          
+          <br>
+
+          <br>
 
         <ul>
 
@@ -1138,29 +1142,9 @@
 
           </a>
 
-          <br>
-
-          <br>
-                        
-          <br>
-      
-          <br>
-
         </ul>
 
-  </section>
-
-    <br>
-
-    <br>
-
-    <br>
-
-    <br>
-                  
-    <br>
-
-    <br>
+    </section>
 
     <footer>
 
@@ -1859,9 +1843,12 @@ const closeLightbox = document.querySelector('.close');
 // Ajoutez un écouteur d'événements à chaque image
 galleryItems.forEach(item => {
     item.addEventListener('click', () => {
-        lightbox.style.display = 'flex'; // Affiche la lightbox
-        lightboxImg.src = item.src; // Définit l'image de la lightbox
-        document.body.style.overflow = 'hidden'; // Empêche le défilement de la page
+        lightbox.style.display = 'flex'; 
+        // Affiche la lightbox
+        lightboxImg.src = item.src; 
+        // Définit l'image de la lightbox
+        document.body.style.overflow = 'hidden'; 
+        // Empêche le défilement de la page
     });
 });
 
@@ -1869,7 +1856,8 @@ galleryItems.forEach(item => {
 
 closeLightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Rétablit le défilement de la page
+    document.body.style.overflow = 'auto'; 
+    // Rétablit le défilement de la page
 
 });
 
@@ -1918,6 +1906,6 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
         });
 
-    </script>
-  </body>
+    </script>     
+  </body>        
 </html>
