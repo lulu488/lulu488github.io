@@ -17,8 +17,9 @@
 {
     background-color: #000000;
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -555,6 +556,7 @@
             justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 40px;
+            border: 5px, black;
         }
 
         .gallery-item {
@@ -693,19 +695,19 @@
 
       <nav>
 
-        <a href="#reglement">Reglement
+        <a href="#reglement">Reglement__
 
         </a>
 
-        <a href="#why">Pourquoi_ce_projet?
+        <a href="#why">Pourquoi_ce_projet?__
 
         </a>
 
-        <a href="#gallery">Galerie
+        <a href="#gallery">Galerie__
 
         </a>
 
-        <a href="#contact">Contact
+        <a href="#contact">Contact__
 
         </a>
 
@@ -735,26 +737,6 @@
 
           soutennir pendant cette courte periode...
 
-        </p>
-
-        <h2>
-
-            quel sera le nom de notre voiture?
-  
-          </h2>
-  
-          <p>
-  
-            notre voiture se nomera "la carankita"
-
-             <br>
-  
-             elle aura le deseign du c15 du seigneur
-  
-             <br>
-  
-            version camion de l'agence tousrisques
-  
           </p>
 
         <section id="reglement">
@@ -800,6 +782,26 @@
       </article>
 
     </main>
+
+    <h2>
+
+        quel sera le nom de notre voiture?
+
+      </h2>
+
+      <p>
+
+        notre voiture se nomera "la carankita"
+
+         <br>
+
+         elle aura le deseign du c15 du seigneur
+
+         <br>
+
+        version camion de l'agence tousrisques
+
+      </p>
 
     <section id="why">
 
@@ -1182,8 +1184,9 @@
 {
     background-color: #000000;
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -1715,6 +1718,25 @@
 
     }
 
+    .gallery 
+    {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            border: 5px, black;
+        }
+        
+        .gallery-item 
+        {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 2.5s ease;
+        }
+
     .lightbox 
     {
         display: none;
@@ -1844,9 +1866,11 @@ galleryItems.forEach(item => {
 });
 
 // Fermez la lightbox lorsqu'on clique sur le bouton de fermeture
+
 closeLightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
     document.body.style.overflow = 'auto'; // Rétablit le défilement de la page
+
 });
 
 // Fermez la lightbox lorsqu'on clique en dehors de l'image
@@ -1854,7 +1878,9 @@ lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) {
         lightbox.style.display = 'none';
         document.body.style.overflow = 'auto';
+
     }
+
 });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1866,6 +1892,7 @@ lightbox.addEventListener('click', (e) => {
             targetElement.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
+
             });
 
         }
